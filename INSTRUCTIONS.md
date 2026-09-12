@@ -1,11 +1,5 @@
 # Reverse Engineering 101 — commands, shortcuts, flow
 
-32-bit Linux ELF. WSL or a VM if you are on Windows.
-
-Parts of this came from an older deck and got updated.
-
-Used in malware analysis, appsec, and exploit development when you have a binary and no source.
-
 Closest C for the instruction slides:
 
 | asm | C |
