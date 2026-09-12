@@ -1,43 +1,5 @@
 # Reverse Engineering 101 — commands, shortcuts, flow
 
-Closest C for the instruction slides:
-
-| asm | C |
-|---|---|
-| `mov eax, ebx` | `eax = ebx;` |
-| `mov eax, [ebx]` | `eax = *ebx;` |
-| `add eax, 5` | `eax += 5;` |
-| `inc eax` / `dec eax` | `eax++;` / `eax--;` |
-| `xor eax, eax` | `eax = 0;` |
-| `cmp` + `je` / `jne` | `if (eax == ebx)` / `if (eax != ebx)` |
-| `jmp` | `goto` |
-| `push` / `pop` | save / restore (no single C op; args and locals) |
-| `call add_one` | `eax = add_one(41);` |
-| `ret` | `return eax;` |
-
----
-
-## What each tool is doing
-
-| thing | job | example |
-|---|---|---|
-| **source** | what you typed | `08_ghidra_flow.c` |
-| **compiler** | source → bytes + ELF | `gcc -m32 ...` |
-| **bytes** | what the CPU runs | `B8 01 00 00 00` |
-| **disassembler** | bytes → assembly | objdump, Ghidra **Listing** |
-| **decompiler** | assembly → C-like guess | Ghidra **Decompile** |
-| **debugger** | run it and stop it | GDB + GEF |
-
-Show this on `08_ghidra_flow`:
-
-1. Open the `.c` so people see `add_one`, `is_ok`, `SECRET`.
-2. Compile it.
-3. `objdump` / Ghidra Listing = disassembler.
-4. Ghidra Decompile = should look a lot like the C.
-5. Then GDB if you want to step the same functions.
-
----
-
 ## Install
 
 ```bash
