@@ -1,0 +1,20 @@
+# built binaries
+examples/01_mov
+examples/02_arith
+examples/03_xor
+examples/04_cmp_jmp
+examples/05_stack
+examples/06_call
+examples/07_strings
+examples/08_ghidra_flow
+examples/ch_*
+!examples/ch_*.s
+
+# local junk / duplicates
+*.o
+__pycache__/
+.DS_Store
+Thumbs.db
+"Reverse Engineering 101 - Copy.pptx"
+"Reverse Engineering 101-updated.pptx"
+preview/
