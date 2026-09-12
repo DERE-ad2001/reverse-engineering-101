@@ -42,11 +42,11 @@ Show this on `08_ghidra_flow`:
 
 ```bash
 sudo apt update
-sudo apt install -y build-essential gcc-multilib gdb python3 hexedit bless binutils
+sudo apt install -y build-essential gcc-multilib g++-multilib libc6-dev-i386 gdb python3 hexedit bless binutils
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ```
 
-- `gcc-multilib` — needed for `-m32`
+- `gcc-multilib` / `g++-multilib` / `libc6-dev-i386` — needed for `-m32` (fixes missing `crt1.o` / `-lgcc`)
 - `gdb` + that GEF line — debugger
 - `hexedit` — terminal hex editor
 - `bless` — GUI hex editor

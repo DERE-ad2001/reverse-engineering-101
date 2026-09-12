@@ -11,7 +11,7 @@ For null kochi X SPARC collaboration workshop
 ```bash
 # Ubuntu / Debian / WSL
 sudo apt update
-sudo apt install -y build-essential gcc-multilib gdb python3 hexedit bless binutils
+sudo apt install -y build-essential gcc-multilib g++-multilib libc6-dev-i386 gdb python3 hexedit bless binutils
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 cd examples
