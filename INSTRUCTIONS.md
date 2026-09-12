@@ -236,38 +236,3 @@ hexedit keys (from the hexedit man page):
 | `F1` | help |
 
 `HELLO_FROM_RE101` and `BYE___FROM_RE101` are both 16 characters (plus a trailing 0 in the file). Same length. Longer text overwrites the next bytes.
-
----
-
-## Example files
-
-| file | why it exists |
-|---|---|
-| `01_mov.s` | `mov` |
-| `02_arith.s` | `add` `sub` `inc` `dec` |
-| `03_xor.s` | `xor` + zero flag |
-| `04_cmp_jmp.s` | `cmp` `jmp` `je` `jne` |
-| `05_stack.s` | `push` `pop` |
-| `06_call.s` | `call` `ret` |
-| `07_strings.c` | hexedit lab |
-| `08_ghidra_flow.c` | compiler → disasm → decompile demo |
-
----
-
-## Crackmes (live)
-
-```bash
-./crackme1
-strings ./crackme1
-gdb ./crackme1
-```
-
-```
-break main
-run
-disassemble
-```
-
-Same in Ghidra: import → analyze → `main` → read the compare → break that address in GDB.
-
-Don't patch. Say what it is checking.
