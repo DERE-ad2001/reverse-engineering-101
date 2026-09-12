@@ -5,10 +5,12 @@
 ```bash
 sudo apt update
 sudo apt install -y build-essential gcc-multilib g++-multilib libc6-dev-i386 gdb python3 hexedit bless binutils
+sudo apt install openjdk-21-jdk -y
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ```
 
 - `gcc-multilib` / `g++-multilib` / `libc6-dev-i386` — needed for `-m32` (fixes missing `crt1.o` / `-lgcc`)
+- `openjdk-21-jdk` — Java. Ghidra needs this before `./ghidraRun`
 - `gdb` + that GEF line — debugger
 - `hexedit` — terminal hex editor
 - `bless` — GUI hex editor
