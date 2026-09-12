@@ -1,8 +1,6 @@
 # Reverse Engineering 101
 
-Linux x32 intro to reverse engineering.
-
-Presented by **Ajin Deepak** (AntiBot Engineer @ NielsenIQ).
+For null kochi X SPARC collaboration workshop
 
 - [Slides](Reverse%20Engineering%20101.pptx)
 - [Instructions](INSTRUCTIONS.md)
